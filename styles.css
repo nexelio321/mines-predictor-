@@ -17,28 +17,46 @@ h1 {
     color: #333;
 }
 
-input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#grid {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-gap: 10px;
+    margin: 20px auto;
 }
 
-button {
-    padding: 10px 20px;
+.block {
+    width: 50px;
+    height: 50px;
     background-color: #28a745;
     color: #fff;
-    border: none;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
-button:hover {
-    background-color: #218838;
+.block.revealed {
+    background-color: #ff6f61;
 }
 
 #result {
     margin-top: 20px;
     font-size: 1.2rem;
     color: #333;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#restartButton:hover {
+    background-color: #555;
 }
