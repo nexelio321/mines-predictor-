@@ -9,12 +9,10 @@
 <body>
     <div class="container">
         <h1>Mine Predictor</h1>
-        <p>Enter your data to predict the mine outcome:</p>
-        <form id="mineForm">
-            <input type="number" id="inputData" placeholder="Enter a number" required>
-            <button type="submit">Predict</button>
-        </form>
+        <p>Click on a block to check if it's a mine:</p>
+        <div id="grid"></div>
         <p id="result"></p>
+        <button id="restartButton">Restart Game</button>
     </div>
     <script src="script.js"></script>
 </body>
